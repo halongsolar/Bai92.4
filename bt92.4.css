@@ -1,0 +1,40 @@
+/* code beauty */
+.box1 {
+  background: rgb(235, 4, 4);
+  grid-area: header;
+}
+.box2 {
+  background: rgb(236, 128, 3);
+  grid-area: blog;
+}
+.box3 {
+  background: rgb(173, 219, 4);
+  grid-area: bline;
+}
+.box4 {
+  background: rgb(6, 218, 70);
+  grid-area: youtu;
+}
+.box5 {
+  background: rgb(3, 164, 228);
+  grid-area: can;
+}
+.box6 {
+  background: rgb(255, 0, 255);
+  grid-area: side;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  gap: 5px;
+  grid-template-areas:
+    "header header bline bline bline"
+    "header header youtu youtu can"
+    "blog blog youtu youtu side";
+}
