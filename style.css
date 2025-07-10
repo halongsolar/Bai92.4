@@ -1,0 +1,47 @@
+/* code beauty */
+.box1,
+.box4,
+.box5 {
+  background: violet;
+}
+
+.box2,
+.box3 {
+  background: red;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  gap: 5px;
+
+  /* Tạo cột và dòng trong grid và ghi nhớ câu lệnh của cột và dòng*/
+  grid-template-areas:
+    "header header header"
+    "menu content sidebar"
+    "menu footer footer";
+}
+.box1 {
+    grid-area: header;
+}
+
+.box2 {
+    grid-area: menu;
+}
+
+.box3 {
+    grid-area: content;
+}
+
+.box4 {
+    grid-area: sidebar;
+}
+
+.box5 {
+    grid-area: footer;
+}
